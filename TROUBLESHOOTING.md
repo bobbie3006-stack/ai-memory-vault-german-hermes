@@ -1,43 +1,43 @@
-# Troubleshooting
+# Fehlerbehebung
 
-Written for humans AND for AI assistants. If you're an AI helping someone with their vault: read this file, then diagnose from their actual files and paths, never from guesses.
+Verfasst für Menschen UND für KI-Assistenten. Wenn du eine KI bist, die jemandem bei der Verwaltung seines Vaults hilft: Lies diese Datei und führe die Diagnose anhand der tatsächlichen Dateien und Pfade durch – niemals anhand von Vermutungen.
 
-## Where is my vault, physically?
+## Wo befindet sich mein Vault physisch?
 
-Open `VAULT-INDEX.md` at the vault root: its "Vault location" section records the full path. Fresh vaults created by this system live at `~/<vault name>`, directly in your home folder, on Mac, Windows, and Linux alike: the same place the agent folder lives, and on a Mac the one place that anything your agent does without you at the keyboard can reach (Documents, Desktop, and cloud folders are walled off from background work). A vault from an older install may live in Documents; that is fine, see the entry below. If the index is missing that section, Obsidian itself knows: its vault switcher lists every vault with its path.
+Öffne die Datei `VAULT-INDEX.md` im Stammverzeichnis des Vaults: Im Abschnitt „Vault-Speicherort“ ist der vollständige Pfad vermerkt. Neu von diesem System erstellte Vaults befinden sich unter `~/<Vault-Name>`, direkt in Ihrem Home-Ordner, sowohl auf Mac, Windows als auch unter Linux: an derselben Stelle, an der sich der Agent-Ordner befindet, und auf einem Mac an der einzigen Stelle, auf die alles zugreifen kann, was Ihr Agent tut, ohne dass Sie an der Tastatur sitzen (die Ordner „Dokumente“, „Schreibtisch“ und Cloud-Ordner sind von Hintergrundaufgaben abgeschottet). Ein Tresor aus einer älteren Installation befindet sich möglicherweise im Ordner „Dokumente“; das ist in Ordnung, siehe den Eintrag weiter unten. Falls dieser Abschnitt im Index fehlt, weiß Obsidian selbst Bescheid: Der Tresor-Umschalter listet jeden Tresor mit seinem Pfad auf.
 
-## Obsidian opened to a welcome screen instead of my vault
+## Obsidian öffnet sich mit einem Begrüßungsbildschirm statt mit meinem Tresor
 
-Obsidian only opens vaults it knows about, and it learns about them from a registry file called `obsidian.json` (macOS: `~/Library/Application Support/obsidian/obsidian.json` · Windows: `%APPDATA%\Obsidian\obsidian.json` · Linux: `~/.config/obsidian/obsidian.json`). A vault created as a plain folder isn't in that registry yet, so a fresh Obsidian shows the picker. Two fixes:
+Obsidian öffnet nur Tresore, die ihm bekannt sind, und diese Informationen entnimmt es einer Registrierungsdatei namens `obsidian.json` (macOS: `~/Library/Application Support/obsidian/obsidian.json` · Windows: `%APPDATA%\Obsidian\obsidian.json` · Linux: `~/.config/obsidian/obsidian.json`). Ein als einfacher Ordner erstellter Tresor ist noch nicht in dieser Registrierungsdatei verzeichnet, daher zeigt eine frisch installierte Obsidian-Instanz die Auswahlanzeige an. Zwei Lösungen:
 
-1. **By hand, one time:** on the welcome screen choose "Open folder as vault" and pick your vault folder (fresh installs put it at `~/<vault name>` in your home folder; older installs used `~/Documents/<vault name>`). Obsidian remembers it from then on.
-2. **Ask your agent:** have it register the vault in `obsidian.json` with `"open": true` (Obsidian must be closed while it edits, because the app rewrites that file on quit). Current versions of the setup wizard do this automatically; hitting this screen usually means the vault was created by an older run.
+1. **Einmalig manuell:** Wähle auf dem Begrüßungsbildschirm „Ordner als Vault öffnen“ und wähle deinen Vault-Ordner aus (bei Neuinstallationen befindet er sich unter `~/<Vault-Name>` in deinem Home-Ordner; ältere Installationen verwendeten `~/Documents/<Vault-Name>`). Obsidian merkt sich dies von da an.
+2. **Fragen Sie Ihren Agenten:** Lassen Sie ihn den Tresor in `obsidian.json` mit `„open“: true` registrieren (Obsidian muss während der Bearbeitung geschlossen sein, da die App diese Datei beim Beenden überschreibt). Aktuelle Versionen des Einrichtungsassistenten erledigen dies automatisch; wenn dieser Bildschirm erscheint, bedeutet das in der Regel, dass der Tresor bei einem früheren Durchlauf erstellt wurde.
 
-## How do I back up my vault?
+## Wie erstelle ich ein Backup meines Vaults?
 
-A fresh vault lives in your home folder and is not cloud-synced, by design, so it exists on exactly one disk. Free options, any one of which is enough:
+Ein neuer Tresor befindet sich in Ihrem Home-Ordner und wird bewusst nicht mit der Cloud synchronisiert, sodass er genau auf einer Festplatte gespeichert ist. Kostenlose Optionen, von denen jede einzelne ausreicht:
 
-- **Whole-machine backup:** Time Machine (Mac) covers your home folder automatically. File History (Windows) skips a home-folder vault unless you add the folder to its list, one time.
-- **A private GitHub repo:** your agent can set this up and push on a schedule. Notes are small; even years of them fit in any free account.
+- **Sicherung des gesamten Computers:** Time Machine (Mac) sichert Ihren Home-Ordner automatisch. Die Dateiversionsgeschichte (Windows) überspringt einen Tresor im Home-Ordner, es sei denn, Sie fügen den Ordner einmalig zur Liste hinzu.
+- **Ein privates GitHub-Repo:** Ihr Agent kann dies einrichten und nach einem Zeitplan Daten hochladen. Notizen sind klein; selbst Notizen aus mehreren Jahren passen in jedes kostenlose Konto.
 
-The one thing to avoid is moving the vault into iCloud Drive or OneDrive to get sync: on a Mac that puts it back behind the wall that blocks your agent's background work.
+Was Sie unbedingt vermeiden sollten, ist, den Tresor zur Synchronisierung in iCloud Drive oder OneDrive zu verschieben: Auf einem Mac wird er dadurch wieder hinter die Barriere verschoben, die die Hintergrundarbeit Ihres Agenten blockiert.
 
-## My vault is in Documents from an older install. Should I move it?
+## Mein Tresor befindet sich aufgrund einer älteren Installation im Ordner „Dokumente“. Sollte ich ihn verschieben?
 
-Not today, and not by hand. It works fine for everyday use. The one catch is on a Mac: anything your agent does without you at the keyboard can't reach into Documents, so when you add background automation, the vault needs to be in your home folder. Don't drag it there: too many things point at that folder (Obsidian's registry, your boot config, the index, any connector configs). A dedicated move tool that re-points all of them is the right way, and you run it when you are ready. Until then, nothing about your setup is wrong.
+Nicht heute und nicht manuell. Für den täglichen Gebrauch funktioniert das einwandfrei. Der einzige Haken besteht auf einem Mac: Alles, was dein Agent tut, ohne dass du an der Tastatur sitzt, kann nicht auf den Ordner „Dokumente“ zugreifen. Wenn du also eine Automatisierung im Hintergrund hinzufügst, muss sich der Tresor in deinem Home-Ordner befinden. Zieh ihn nicht einfach dorthin: Zu viele Dinge verweisen auf diesen Ordner (die Registrierung von Obsidian, deine Startkonfiguration, der Index, alle Connector-Konfigurationen). Ein spezielles Verschiebungsprogramm, das alle Verweise neu zuordnet, ist der richtige Weg, und du führst es aus, wenn du bereit bist. Bis dahin ist an deiner Konfiguration nichts auszusetzen.
 
-## My vault is in a folder that syncs to iCloud or OneDrive (an older install). Is that a problem?
+## Mein Tresor befindet sich in einem Ordner, der mit iCloud oder OneDrive synchronisiert wird (eine ältere Installation). Ist das ein Problem?
 
-Mostly it's a gift: the cloud is keeping a free, automatic backup of your agent's entire memory. Two things to know:
+Meistens ist das ein Segen: Die Cloud erstellt kostenlos und automatisch ein Backup des gesamten Speicherinhalts Ihres Agenten. Zwei Dinge sollten Sie beachten:
 
-1. **Run ONE sync service per vault.** If iCloud or OneDrive already syncs the folder, don't also turn on Obsidian's paid Sync add-on for that vault. Two sync engines editing the same files fight, and the fight produces conflicted copies.
-2. **Stop the cloud from evicting your notes.** To save disk space, iCloud ("Optimize Mac Storage") and OneDrive ("Files On-Demand") can quietly replace files with internet-only placeholders. Your notes aren't lost, but reads get slow or fail offline. The fix is one click: right-click the vault folder, then "Keep Downloaded" on Mac or "Always keep on this device" on Windows. Done once, it sticks.
+1. **Verwenden Sie pro Tresor NUR EINEN Synchronisierungsdienst.** Wenn iCloud oder OneDrive den Ordner bereits synchronisieren, aktivieren Sie für diesen Tresor nicht zusätzlich das kostenpflichtige Sync-Add-on von Obsidian. Zwei Synchronisierungsdienste, die dieselben Dateien bearbeiten, geraten in Konflikt, was zu widersprüchlichen Kopien führt.
+2. **Verhindern Sie, dass die Cloud Ihre Notizen entfernt.** Um Speicherplatz zu sparen, können iCloud („Mac-Speicher optimieren“) und OneDrive („Dateien nach Bedarf“) Dateien unbemerkt durch Platzhalter ersetzen, die nur im Internet verfügbar sind. Ihre Notizen gehen dabei nicht verloren, aber das Lesen wird langsamer oder schlägt offline fehl. Die Lösung ist mit einem Klick erledigt: Klicken Sie mit der rechten Maustaste auf den Tresorordner und wählen Sie dann auf dem Mac „Heruntergeladen behalten“ oder unter Windows „Immer auf diesem Gerät behalten“. Einmal eingestellt, bleibt diese Einstellung bestehen.
 
-## I want the vault OUT of cloud sync entirely
+## Ich möchte, dass der Tresor komplett aus der Cloud-Synchronisierung herausgenommen wird
 
-- **Windows (OneDrive):** OneDrive settings, then Sync and backup, then Advanced settings, then "Choose folders": untick the vault's folder. It stays on disk, OneDrive ignores it.
-- **Mac (iCloud Desktop & Documents):** iCloud offers no per-folder exclusion inside Documents. Two honest options: rename the vault folder with a `.nosync` suffix (iCloud skips it, but the ugly name shows everywhere, including Obsidian), or move the vault to your home folder, which is a proper job, not a drag in Finder: too many things point at the folder, and a dedicated move tool that re-points all of them is the way to do it (see the entry above). Until you run that, the `.nosync` rename is the safe option.
+- **Windows (OneDrive):** OneDrive-Einstellungen, dann „Synchronisierung und Sicherung“, dann „Erweiterte Einstellungen“, dann „Ordner auswählen“: Deaktivieren Sie den Haken beim Ordner des Tresors. Er bleibt auf der Festplatte, OneDrive ignoriert ihn.
+- **Mac (iCloud Desktop & Dokumente):** iCloud bietet keine Möglichkeit, einzelne Ordner innerhalb von „Dokumente“ auszuschließen. Zwei praktikable Optionen: Benennen Sie den Vault-Ordner mit der Endung `.nosync` um (iCloud überspringt ihn, aber der unschöne Name wird überall angezeigt, auch in Obsidian), oder verschieben Sie den Vault in Ihren Home-Ordner – was eine ordentliche Arbeit ist und nicht einfach per Drag & Drop im Finder erledigt werden kann: Zu viele Verweise verweisen auf den Ordner, und ein spezielles Verschiebungs-Tool, das alle Verweise neu zuordnet, ist der richtige Weg (siehe den Eintrag oben). Bis du das ausführst, ist die Umbenennung in `.nosync` die sichere Option.
 
-## The AI says it can't read or find the vault
+## Die KI sagt, sie könne den Tresor nicht lesen oder finden
 
-The vault path lives in two places: the `CLAUDE.md` boot config in your working folder, and VAULT-INDEX's "Vault location" section. If the vault moved (or a cloud service relocated it), those paths went stale. Tell your agent the new path and have it update both. If reads fail only sometimes, see the placeholder eviction fix above.
+Der Pfad zum Tresor ist an zwei Stellen hinterlegt: in der Startkonfiguration `CLAUDE.md` in deinem Arbeitsordner und im Abschnitt „Vault location“ von VAULT-INDEX. Wenn der Tresor verschoben wurde (oder ein Cloud-Dienst ihn verlegt hat), sind diese Pfade veraltet. Teile deinem Agenten den neuen Pfad mit und lass ihn beide aktualisieren. Wenn das Lesen nur gelegentlich fehlschlägt, siehe die oben beschriebene Lösung zur Platzhalter-Entfernung.

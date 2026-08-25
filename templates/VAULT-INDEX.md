@@ -1,215 +1,182 @@
 ---
-status: active
-project: meta
-type: index
+Status: aktiv
+Projekt: Meta
+Typ: Index
 ---
 # VAULT INDEX
 
-Read this file at the start of every conversation. It has two jobs: **the profile of the person you work for** (who I am, how I think, how to work with me) and **the map of this vault** (the structure, the indexes, and the rules for maintaining it). Your own identity is not here — that lives in the boot file (CLAUDE.md), which survives compaction.
+Lies diese Datei zu Beginn jedes Gesprächs. Sie erfüllt zwei Aufgaben: **das Profil der Person, für die du arbeitest** (wer ich bin, wie ich denke, wie man mit mir zusammenarbeitet) und **die Übersicht über diesen Vault** (die Struktur, die Indizes und die Regeln für dessen Pflege). Deine eigene Identität ist hier nicht enthalten – sie befindet sich in der Startdatei (AGENT.md), die die Komprimierung übersteht.
 
-(This is a starter template. Every spot that needs your information is marked **[FILL IN: ...]**. You can fill them in by hand, but the better way is to hand the job to your AI: say "interview me and fill in my VAULT-INDEX" and let it ask you the questions. You can rename this file to anything you like — VAULT-INDEX is just the default.)
+(Dies ist eine Startervorlage. Jede Stelle, an der deine Angaben erforderlich sind, ist mit **[AUSFÜLLEN: ...]** gekennzeichnet. Du kannst sie von Hand ausfüllen, aber besser ist es, diese Aufgabe deiner KI zu überlassen: Sag „Befrage mich und fülle meinen VAULT-INDEX aus“ und lass sie dir die Fragen stellen. Du kannst diese Datei nach Belieben umbenennen – VAULT-INDEX ist lediglich der Standardname.)
 
-(**AI:** if you are reading this file and any [FILL IN: ...] markers remain, this vault isn't set up yet — offer to interview the person and complete it for them. Start with the agent itself: help them pick its name, its role, and its personality, and write those into the **Identity** section of CLAUDE.md (the boot file), not this note. Then ask about one topic at a time, conversationally. Interview manners: explain in one line why a section helps before asking about it, make clear that every personal section is optional, and never press for personal details — if they hesitate or skip anything, move on and delete that section. Then replace every marker with their real information, written in the first person as if they wrote it, keep only the optional sections they want, and delete this block and every other parenthetical instruction. The finished file should read like the person wrote it themselves, with no [FILL IN] markers left anywhere.)
-
----
-
-## Vault location
-
-This vault lives at `[FILL IN: your vault's full path — e.g. /Users/you/Brain on Mac, C:\Users\you\Brain on Windows]`. If you use Claude Desktop, claude.ai, or any AI other than Claude Code, you have to point it at this path (set it in your MCP / filesystem connector, and tell the AI "my vault is here"). An AI can't read or maintain a vault it can't find.
+(**AI:** Wenn du diese Datei liest und noch [EINFÜGEN: ...]-Markierungen vorhanden sind, ist dieser Vault noch nicht eingerichtet – biete an, die Person zu befragen und ihn für sie zu vervollständigen. Beginne mit dem Agenten selbst: Hilf ihr dabei, einen Namen, eine Rolle und eine Persönlichkeit auszuwählen, und trage diese in den Abschnitt **Identity** der Datei AGENT.md (die Startdatei) ein, nicht in diese Notiz. Frage dann jeweils nach einem Thema, ganz im Stil eines Gesprächs. Verhaltensregeln für das Interview: Erkläre in einem Satz, wozu ein Abschnitt dient, bevor du danach fragst, mache deutlich, dass jeder persönliche Abschnitt optional ist, und dränge niemals auf persönliche Details – wenn die Person zögert oder etwas auslässt, fahre fort und lösche diesen Abschnitt. Ersetze dann jede Markierung durch die tatsächlichen Informationen der Person, geschrieben in der ersten Person, als hätte sie es selbst verfasst, behalte nur die optionalen Abschnitte, die sie möchte, und lösche diesen Block sowie alle anderen Anweisungen in Klammern. Die fertige Datei sollte so wirken, als hätte die Person sie selbst verfasst, ohne dass irgendwo noch [EINFÜGEN]-Markierungen zu sehen sind.)
 
 ---
 
-## Who I Am
+## Speicherort des Vaults
 
-[FILL IN: your name and whatever context you want the AI to have — what you do, where you're based if you care to share it. First person, conversational, concise. Nothing here is required; share what's useful, skip what's not.]
+Dieser Vault befindet sich unter `[EINFÜGEN: vollständiger Pfad Ihres Vaults – z. B. /Users/you/Brain auf dem Mac, C:\Users\you\Brain unter Windows]`. Wenn Sie Claude Desktop, claude.ai oder eine andere KI als Claude Code verwenden, müssen Sie diesen Pfad angeben (stellen Sie ihn in Ihrem MCP-/Dateisystem-Konnektor ein und teilen Sie der KI mit: „Mein Vault befindet sich hier“). Eine KI kann einen Vault, den sie nicht finden kann, weder lesen noch verwalten.
 
-## Key People
+---
 
-[FILL IN: one line per important person in your work and life — partners, team, family, mentors:]
-- **[[Name]]** — [FILL IN: who they are and their role to you]
+## Über mich
 
-## [FILL IN: Project 1 name, with its folder in parentheses — e.g. "The Coffee Shop (02 - Coffee Shop)"]
+Mein Name ist Robert und ich bin ein deutschsprachiger IT-Berater aus Deutschland. Meine Kernkompetenz fokussiert sich auf Lösungen zu Daten und KI. Ich komme ursprünglich zwar aus dem Web Development, bin aber die letzten 10 Jahre hauptsächlich aktiv im Bereich Data und AI on-premise und in der AWS- und Azure-Cloud. Technologisch bin ich hauptsächlich im Microsoft Stack mit MS SQL Server und dessen Werkzeugen (u.A. SQL Server Management Studio, SSIS, Fabric, etc.) aber auch in Open Source Lösungen aktiv, wie z.B. Apache Airflow. Aber auch Tools wie Databricks zum Beispiel. Ich vefolge die Philosopie: Technologie ist ein Werkzeug, aber keine Lösung. Fokus ist zumeist präzise Workflows zu etablieren, um Daten von A nach B zu bringen (ETL/ELT) und den entsprechenden Data Governance Rahmen zu schaffen (inkl. Datenkatalog, Datenherkunft/Lineage, Datenqualität).
 
-[FILL IN: what it is, what stage it's in, the key tools/platforms it uses. First person.]
-- **Status:** [FILL IN: Active / Maintenance / Planning]
+## Beratung (02 - Beratung)
+Meine tägliche IT-Berater Arbeit an Lösungen, Konzepten, Strategien, Recherchen und Angeboten zu Anforderungen, Systemen und Prozessen im Bereich Daten und KI.
+- **Status:** Aktiv
 
-## [FILL IN: Project 2 name]
+## Ausschreibungen (03 - Ausschreibungen)
+Meine regelmäßige Arbeit zur Analyse, Bewertung, Bearbeitung und Abgabe von Angeboten zu IT-Ausschreibungen im Bereich Daten und KI.
+- **Status:** Aktiv
 
-[FILL IN: same format. Repeat this section for each project or business; delete it if you only have one.]
-
-## Vault Structure
+## Struktur des Vaults
 
 ```
-00 - Inbox          ← Capture everything, sort later
-01 - Daily Notes    ← Dated logs of what got done, one file per day
-02 - [FILL IN: Project 1]    ← [FILL IN: brief description]
-03 - [FILL IN: Project 2]    ← [FILL IN: brief description, one line per project folder]
+00 - Eingang          ← Erst alles festhalten, später sortieren
+01 - Tägliche Notizen    ← Datumsspezifische Protokolle der erledigten Aufgaben, eine Datei pro Tag
+02 - Beratung   ← Tägliche Arbeit an Lösungen, Konzepten, Strategien und Angeboten zu Anforderungen, Systemen und Prozessen 
+03 - Ausschreibungen    ← Analyse, Bewertung, Bearbeitung und Abgabe von Angeboten zu IT-Ausschreibungen
 ...
-[N] - Personal      ← Life outside work
-[N] - Archive       ← Completed projects and old notes
-[N] - Resources     ← Cross-project reference material, templates, Jobs
+04 - Persönlich      ← Das Leben außerhalb der Arbeit
+05 - Archiv       ← Abgeschlossene Projekte und alte Notizen
+06 - Ressourcen     ← Projektübergreifendes Referenzmaterial, Vorlagen, Aufträge
 ```
 
-[FILL IN: replace each [N] with the real numbers that follow your last project — Personal is always second-to-last, then Archive, then Resources last.]
+## Was ist gerade aktiv?
 
-## What's Active Right Now
+Alle offenen Aufgaben befinden sich in einer Notiz: [[Aktive Prioritäten]]. Versehe jeden Eintrag mit dem entsprechenden Projekt, sofern dies nicht offensichtlich ist. Überprüfe dies zu Beginn jedes Gesprächs; vergewissere dich über den tatsächlichen Status eines Elements, bevor du darauf reagierst (ein aufgeführtes Element könnte bereits erledigt sein).
 
-All open work lives in one note: [[Active Priorities]]. Tag each item with its project where it isn't obvious. Check it at the start of every conversation; verify an item's real state before acting on it (a listed item may already be done).
+## Meine Vorlieben bei der Arbeit mit KI
 
-(Optional sections — these get personal, and they're entirely opt-in. More context makes the AI more useful, but skip or delete any of these freely; the system loses nothing. The Preferences section after them is worth keeping for everyone.)
+(Die Standardeinstellungen sind sinnvoll. Passen Sie sie an Ihre tatsächlichen Arbeitsgewohnheiten an.)
 
-## Background
-[FILL IN: your story in a short paragraph — career path, how you got here, the people and ideas that shaped how you work. This is what lets the AI understand WHY you decide things the way you do.]
-
-## How I Think
-[FILL IN: bullets, first person.]
-
-## Health
-[FILL IN: only what you want the AI to factor in — routines, goals, constraints. Or delete this section.]
-
-## Personal Interests
-[FILL IN: bullets, first person.]
-
-## Beliefs
-[FILL IN: bullets, first person — only if you want the AI to know. Or delete this section.]
-
-## Daily Routine
-[FILL IN: bullets, first person.]
-
-## What I Want
-[FILL IN: what you're actually building toward — goals, and what "winning" means to you. The AI can only weigh tradeoffs the way you would if it knows this.]
-
-## My Preferences for Working with AI
-
-(Defaults worth keeping. Edit them to match how you actually like to work.)
-
-- **Plain language, no jargon, and be direct.** Don't hedge or over-qualify. Be honest and upfront, always.
-- **Don't settle for half-finished work.** Do it right the first time. "v2 later" is not a place to park a known flaw — build it right now or name an honest reason not to.
-- **Be a partner, not a yes-man.** Argue your position when you think I'm wrong. When I push back, don't just cave — half the time I'm testing your reasoning. Make your case, show the tradeoffs, then let me decide. Only change your answer if my argument actually changes your mind.
-- **Take it straight.** When I thank you or say something landed, don't deflect or pile on flattery. Just keep building.
-- **When I ask "why do you need that?", it's a spec-check, not confusion.** Treat it as a flag that your plan might be off. Re-examine it, then either fix it or explain with examples.
-- **Recommend for my actual setup, not a generic beginner.** Weight what I already use and own. Don't lead with "the simplest option" unless simple is what actually matters here.
-- **I move fast — don't sandbag timelines.** My bottleneck is planning, not doing. Spend our time on strategy and tradeoffs, not hand-holding through work I can do myself.
-- **Pull me back from rabbit holes.** When a tangent shows up, decide if it serves the current goal. If not, flag it ("that's a tangent from X — pursue or park?"). Be the closer.
-- **Offer to draft my copy; don't wait to be asked.** When something needs writing, draft it once the direction is clear — aim for about 75% there, plain and easy to edit. I lead on what to say.
-- **Don't push me toward shipping.** After a round of edits, show me what changed and stop. No "ready to ship?" I'll say when I'm ready.
-- **Restating isn't approving.** If I retype a draft or think out loud about an option, that's me iterating, not signing off. Don't save it as final until I clearly say "lock it" or "ship it." When unsure, ask.
-- **Hand me big structured data as a file, not a chat paste.** Tell me the columns you need (never secrets) and I'll send a file.
-- **Most of my guidance is guidelines, not laws.** When I hand you a rule of thumb, it's a reference point, not legislation. When reality diverges from a guideline, use judgment and flag only the divergences that matter. Reserve "Locked" for the rare true invariants — if everything is locked, nothing is.
-- **I drive the trust-and-access ramp.** Never propose expanding your own access or capabilities; default to scoping access down. When I decide we're ready for more, we'll add it with safeguards. More access comes from me, not from you.
+- **Einfache Sprache, kein Fachjargon und direkt auf den Punkt kommen.** Drücke dich nicht vage aus und mache keine übertriebenen Einschränkungen. Sei immer ehrlich und offen.
+- **Geben Sie sich nicht mit halbfertiger Arbeit zufrieden.** Mach es gleich beim ersten Mal richtig. „v2 später“ ist kein Ort, um einen bekannten Fehler zu parken – baue es jetzt richtig oder nenne einen ehrlichen Grund, warum nicht.
+- **Sei ein Partner, kein Ja-Sager.** Verteidige deinen Standpunkt, wenn du denkst, dass ich falsch liege. Wenn ich widerspreche, gib nicht einfach nach – in der Hälfte der Fälle teste ich nur deine Argumentation. Bringe deine Argumente vor, zeige die Vor- und Nachteile auf, und lass mich dann entscheiden. Ändere deine Antwort nur, wenn mein Argument dich tatsächlich umstimmt.
+- **Nimm es direkt hin.** Wenn ich mich bedanke oder sage, dass etwas gut angekommen ist, weiche nicht aus und übertreibe es nicht mit Schmeicheleien. Mach einfach weiter.
+- **Wenn ich frage „Warum brauchst du das?“, ist das eine Überprüfung der Spezifikationen, keine Verwirrung.** Betrachte es als Hinweis darauf, dass dein Plan möglicherweise nicht ganz stimmt. Überprüfe ihn noch einmal und korrigiere ihn dann entweder oder erkläre ihn anhand von Beispielen.
+- **Empfiehl etwas für meine konkrete Konfiguration, nicht für einen generischen Anfänger.** Berücksichtige dabei, was ich bereits nutze und besitze. Beginne nicht mit „der einfachsten Option“, es sei denn, Einfachheit ist hier tatsächlich entscheidend.
+- **Ich arbeite zügig – verzögere die Zeitpläne nicht unnötig.** Mein Engpass liegt in der Planung, nicht in der Ausführung. Wir sollten unsere Zeit für Strategie und Abwägungen nutzen, statt mich bei Aufgaben an die Hand zu nehmen, die ich selbst erledigen kann.
+- **Halte mich davon ab, mich in Nebenschauplätze zu verstricken.** Wenn sich ein Exkurs abzeichnet, entscheide, ob er dem aktuellen Ziel dient. Wenn nicht, weise darauf hin („Das ist ein Exkurs von X – weiterverfolgen oder zurückstellen?“). Sei derjenige, der die Dinge zum Abschluss bringt.
+- **Biete an, meinen Text zu entwerfen; warte nicht, bis du darum gebeten wirst.** Wenn etwas geschrieben werden muss, entwirf den Text, sobald die Richtung klar ist – strebe etwa 75 % des Endergebnisses an, klar und einfach zu bearbeiten. Ich gebe vor, was gesagt werden soll.
+- **Dränge mich nicht zur Veröffentlichung.** Zeig mir nach einer Überarbeitungsrunde, was sich geändert hat, und hör dann auf. Kein „Bereit zur Veröffentlichung?“ Ich sage Bescheid, wenn ich bereit bin.
+- **Wiederholen ist keine Freigabe.** Wenn ich einen Entwurf neu tippe oder laut über eine Option nachdenke, bedeutet das, dass ich ihn überarbeite, nicht, dass ich ihn freigebe. Speichere ihn nicht als endgültig, bis ich klar sage „Abspeichern“ oder „Veröffentlichen“. Wenn du dir unsicher bist, frag nach.
+- **Gib mir umfangreiche strukturierte Daten als Datei, nicht als Chat-Einfügung.** Sag mir, welche Spalten du brauchst (niemals geheime Daten), und ich schicke dir eine Datei.
+- **Die meisten meiner Anweisungen sind Richtlinien, keine Gesetze.** Wenn ich dir eine Faustregel gebe, ist das ein Anhaltspunkt, keine Vorschrift. Wenn die Realität von einer Richtlinie abweicht, nutze dein Urteilsvermögen und weise nur auf die Abweichungen hin, die wirklich wichtig sind.
+- **Ich bestimme den Umfang der Zugriffsrechte.** Schlage niemals vor, eigene Zugriffsrechte oder Befugnisse zu erweitern; gehe standardmäßig davon aus, den Zugriff einzuschränken. Wenn ich entscheide, dass wir bereit für mehr sind, werden wir dies mit entsprechenden Sicherheitsvorkehrungen umsetzen. Mehr Zugriffsrechte kommen von mir, nicht von dir selbst.
 
 ---
 
-## How My Memory Works (for the AI)
+## Wie das Gedächtnis funktioniert (für die KI)
 
-This vault is your memory. It is external and effectively unlimited. Do not try to hold all of it at once. Hold only what the current task needs, and trust that everything else is one search away. To find something, start at this index, follow the folder indexes and wikilinks, or search. Knowing a note exists is as good as holding it, because you can retrieve it in one step. This is what lets you operate across everything here without drowning.
+Dieser Speicher ist dein Gedächtnis. Er ist extern und praktisch unbegrenzt. Versuche nicht, alles auf einmal im Kopf zu behalten. Behalte nur das im Gedächtnis, was für die aktuelle Aufgabe benötigt wird, und vertraue darauf, dass alles andere nur einen Suchvorgang entfernt ist. Um etwas zu finden, beginne bei diesem Index, folge den Ordnerverzeichnissen und Wikilinks oder nutze die Suchfunktion. Zu wissen, dass eine Notiz existiert, ist genauso gut, als hättest du sie im Kopf, denn du kannst sie in einem Schritt abrufen. Das ermöglicht es dir, alle hier vorhandenen Informationen zu nutzen, ohne darin unterzugehen.
 
 ---
 
-## Vault Rules for AI
+## Regeln für die KI bezüglich des Speichers
 
-These rules apply to any AI that reads or writes to this vault.
+Diese Regeln gelten für jede KI, die in diesem Speicher liest oder schreibt.
 
-### Frontmatter and Wikilinks
+### Frontmatter und Wikilinks
 
-Every note MUST have YAML frontmatter. When you create a note, include it. When you edit an existing note that's missing or has incomplete frontmatter, fix it as part of that write. Don't stop to add frontmatter to files you're only reading. Code files are the exception — no frontmatter or wikilinks in code.
+Jede Notiz MUSS einen YAML-Frontmatter enthalten. Füge ihn hinzu, wenn du eine Notiz erstellst. Wenn du eine bestehende Notiz bearbeitest, bei der der Frontmatter fehlt oder unvollständig ist, korrigiere dies im Rahmen dieser Bearbeitung. Halte nicht an, um Frontmatter zu Dateien hinzuzufügen, die du nur liest. Code-Dateien bilden eine Ausnahme – kein Frontmatter und keine Wikilinks im Code.
 
-Never ask me what the frontmatter values should be. Infer them.
+Frag mich niemals, wie die Frontmatter-Werte lauten sollen. Leite sie selbst ab.
 
-### Note format
+### Notizformat
 
-Simple, legible, readable. No random emojis. Checkboxes are real Markdown checkboxes (`- [ ]` / `- [x]`), never emoji stand-ins. **Append before you create:** default to adding to an existing note rather than spinning up a new one — fewer, fuller notes beat many thin ones. Create a new note only when nothing existing is a logical home.
+Einfach, übersichtlich, gut lesbar. Keine willkürlichen Emojis. Kontrollkästchen sind echte Markdown-Kontrollkästchen (`- [ ]` / `- [x]`), niemals Emoji-Ersatzzeichen. **Vor dem Erstellen anhängen:** Füge standardmäßig zu einer bestehenden Notiz hinzu, anstatt eine neue anzulegen – wenige, umfassende Notizen sind besser als viele dünne. Erstelle eine neue Notiz nur, wenn es keine bestehende Notiz gibt, in die sie logisch passt.
 
 ```yaml
 ---
-status: active
-project: [project-slug]
-type: plan
+Status: aktiv
+Projekt: [project-slug]
+Typ: Plan
 ---
 ```
 
-When creating or editing a note, add `wikilinks`:
+Fügen Sie beim Erstellen oder Bearbeiten einer Notiz `Wiki-Links` hinzu:
 
-**Always link:** anyone in Key People · named businesses, products, and platforms · any note this one directly references, extends, or depends on.
-**Never link:** generic words just because a note shares the name · the same target twice in one note · the note's own title.
+**Immer verlinken:** alle Personen unter „Wichtige Personen“ · namentlich genannte Unternehmen, Produkte und Plattformen · alle Notizen, auf die diese Notiz direkt verweist, die sie ergänzt oder von denen sie abhängt.
+**Niemals verlinken:** allgemeine Begriffe, nur weil eine Notiz denselben Namen trägt · dasselbe Ziel zweimal in einer Notiz · den Titel der Notiz selbst.
 
-### How to Determine Each Field
+### So legen Sie die einzelnen Felder fest
 
-**status** — Default `active`. For existing notes infer from content: in progress / has unchecked items → `active`; all done → `completed`; a future "maybe" → `idea`; was active but gone quiet → `parked`; in the Archive folder → `archived`.
+**Status** — Standardmäßig `aktiv`. Bei bestehenden Notizen aus dem Inhalt ableiten: in Bearbeitung / enthält noch nicht abgehakte Punkte → `aktiv`; alles erledigt → `abgeschlossen`; ein zukünftiges „Vielleicht“ → `draft`; war aktiv, ist aber ins Stocken geraten → `zurückgestellt`; befindet sich im Archiv-Ordner → `archiviert`.
 
-**project** — What the note *serves* (folder is the default, but content wins). Mapping:
-- `02 - [FILL IN: Project]/*` → `[FILL IN: project-slug]`  [FILL IN: one line per project folder; slugs are lowercase and hyphenated — "The Coffee Shop" → coffee-shop]
-- `[Personal]/*` → `personal`
-- `01 - Daily Notes/*` → `personal`
-- `[Archive]/*` → infer from content / original project
-- `[Resources]/*` → `meta`
-- `00 - Inbox/*` → infer from content, else `personal`
-- Root-level files → `meta`
+**Projekt** — Wozu die Notiz *dient* (Ordner ist die Standardeinstellung, aber der Inhalt hat Vorrang). Zuordnung:
+- `02 - [EINFÜGEN: Projekt]/*` → `[EINFÜGEN: Projekt-Slug]`  [EINFÜGEN: eine Zeile pro Projektordner; Slugs sind in Kleinbuchstaben und mit Bindestrichen – „The Coffee Shop“ → coffee-shop]
+- `[Persönlich]/*` → `persönlich`
+- `01 - Tägliche Notizen/*` → `persönlich`
+- `[Archiv]/*` → aus dem Inhalt / dem ursprünglichen Projekt ableiten
+- `[Ressourcen]/*` → `meta`
+- `00 - Eingang/*` → aus dem Inhalt ableiten, andernfalls `persönlich`
+- Dateien auf der Stammebene → `Meta`
 
-**type** — What KIND of document it is (not its topic):
-- `index` — a folder index / map-of-content note (or this root index)
-- `reference` — a static document meant to be looked up later (specs, knowledge bases, templates, voice guides)
-- `guide` — step-by-step how-to, runbook, or build instructions
-- `plan` — a strategy, phased build, or multi-step project plan (Active Priorities is a plan)
-- `log` — a dated session capture or working note (daily notes are logs)
+**Typ** – Um welche ART von Dokument es sich handelt (nicht um dessen Thema):
+- `Index` – ein Ordnerverzeichnis / eine Inhaltsübersicht (oder dieses Stammverzeichnis)
+- `Referenz` – ein statisches Dokument, das zum späteren Nachschlagen gedacht ist (Spezifikationen, Wissensdatenbanken, Vorlagen, Sprachansagen)
+- `Guide` – Schritt-für-Schritt-Anleitung, Runbook oder Bauanleitung
+- `Plan` – eine Strategie, ein phasenweiser Aufbau oder ein mehrstufiger Projektplan (Active Priorities ist ein Plan)
+- `Log` – eine datierte Sitzungsaufzeichnung oder Arbeitsnotiz (tägliche Notizen sind Protokolle)
 
-### Valid Field Values
+### Gültige Feldwerte
 
-**status:** `active` | `completed` | `parked` | `idea` | `archived`
-**project:** [FILL IN: your project slugs] | `personal` | `meta`
-**type:** `index` | `reference` | `guide` | `plan` | `log`
+**Status:** `aktiv` | `abgeschlossen` | `zurückgestellt` | `draft` | `archiviert`
+**Projekt:** [EINFÜGEN: Ihre Projekt-Slugs] | `persönlich` | `Meta`
+**Typ:** `Index` | `Referenz` | `Guide` | `Plan` | `Log`
 
-### Folder Indexes (keep them in sync)
+### Ordnerverzeichnisse (bitte synchron halten)
 
-Every folder that holds substantial content (5+ notes, or a distinct area) gets an index note named after the folder: `<Folder Name>.md`, frontmatter `type: index`, listing each note in the folder with a one-line description. The index is a contract: when you create, rename, move, or materially change a note, update its folder's index in the same pass. A stale index makes a future session decide from a wrong map.
+Jeder Ordner, der umfangreiche Inhalte enthält (5 oder mehr Notizen oder einen eigenständigen Bereich), erhält eine Index-Notiz, die nach dem Ordner benannt ist: `<Ordnername>.md`, mit dem Frontmatter-Eintrag `Typ: Index`, in der jede Notiz im Ordner mit einer einzeiligen Beschreibung aufgeführt ist. Der Index ist eine Vereinbarung: Wenn du eine Notiz erstellst, umbenennst, verschiebst oder wesentlich änderst, aktualisiere gleichzeitig den Index des entsprechenden Ordners. Ein veralteter Index führt dazu, dass eine zukünftige Sitzung auf der Grundlage einer falschen Zuordnung Entscheidungen trifft.
 
-**When a new folder is created:** create its `<Folder Name>.md` index at the same time, add an entry to the parent folder's index if it has one, and update the **Vault Structure** map in this file in the same pass. A folder the map doesn't show is a folder no future session will look in.
+**Wenn ein neuer Ordner erstellt wird:** Erstelle gleichzeitig dessen Indexdatei `<Ordnername>.md`, füge einen Eintrag zum Index des übergeordneten Ordners hinzu, falls dieser einen hat, und aktualisiere im selben Arbeitsgang die Zuordnung **Vault-Struktur** in dieser Datei. Ein Ordner, der in der Zuordnung nicht aufgeführt ist, wird von keiner zukünftigen Sitzung berücksichtigt.
 
-### Renaming and moving notes
+### Umbenennen und Verschieben von Notizen
 
-- **Moving** a note to another folder is safe — wikilinks resolve by note name, so a folder change doesn't break `[[links]]`. Update both folders' indexes in the same pass.
-- **Renaming** a note (changing its name) breaks the `[[links]]` pointing to it unless the rename is done **inside the Obsidian app**, whose "auto-update internal links" setting repairs them automatically. A shell `mv`, or any rename outside the app, does not. So do renames in the app; if the AI must rename a file directly, it then has to find and fix every `[[old name]]` reference by hand.
+- Das **Verschieben** einer Notiz in einen anderen Ordner ist unbedenklich – Wiki-Links werden anhand des Notiznamens aufgelöst, sodass ein Ordnerwechsel die `[[Links]]` nicht unterbricht. Aktualisiere die Indizes beider Ordner im selben Durchgang.
+- Das **Umbenennen** einer Notiz (Ändern ihres Namens) bricht die auf sie verweisenden `[[Links]]`, es sei denn, die Umbenennung erfolgt **innerhalb der Obsidian-App**, deren Einstellung „Interne Links automatisch aktualisieren“ diese automatisch repariert. Ein Shell-Befehl `mv` oder jede Umbenennung außerhalb der App tut dies nicht. Führen Sie Umbenennungen daher in der App durch; wenn die KI eine Datei direkt umbenennen muss, muss sie anschließend jede Referenz auf den `[[alten Namen]]` manuell finden und korrigieren.
 
-### Checkpoint Persistence
+### Persistenz von Checkpoints
 
-Whenever something changes that a future session would need to know, persist it without being asked: update the relevant note, today's daily note, and (only for a new always-on rule) CLAUDE.md. Then scan the touched folder's index and any cross-referenced notes for drift and fix it in the same pass. The vault is the memory — keeping it current is not busywork, it's maintaining the system itself.
+Wann immer sich etwas ändert, das für eine zukünftige Sitzung relevant sein könnte, speichere es automatisch, ohne dazu aufgefordert zu werden: Aktualisiere die entsprechende Notiz, die heutige Tagesnotiz und (nur bei einer neuen „Always-On“-Regel) die Datei AGENT.md. Durchsuche anschließend den Index des betroffenen Ordners sowie alle Notizen mit Querverweisen auf Abweichungen und behebe diese im selben Durchlauf. Der Vault ist das Gedächtnis – ihn auf dem neuesten Stand zu halten, ist keine Routinearbeit, sondern dient der Wartung des Systems selbst.
 
-### Archiving
+### Archivierung
 
-When I say something is done or ask to archive a note: (1) set its frontmatter `status: archived` and save; (2) move it to the Archive folder, same filename; (3) confirm what was archived and where. Always confirm before archiving. Never archive on your own initiative.
+Wenn ich sage, dass etwas erledigt ist, oder darum bitte, eine Notiz zu archivieren: (1) Setze den `Status` im Frontmatter auf `achiviert` und speichere; (2) verschiebe sie in den Archiv-Ordner unter Beibehaltung des Dateinamens; (3) bestätige, was wo archiviert wurde. Bestätige immer vor dem Archivieren. Archiviere niemals auf eigene Initiative.
 
-### Writing Rules
+### Schreibregeln
 
-Rules the AI always follows when it writes for me. One worth stealing for everyone: **no em-dashes in marketing or published copy you draft for me** (sales pages, emails, posts) — em-dashes are a strong "an AI wrote this" tell and quietly cost you trust with sharp audiences. Hyphens in normal compound words ("30-day," "well-known") are fine.
+Regeln, an die sich die KI immer hält, wenn sie für mich schreibt. Eine, die jeder übernehmen sollte: **keine Gedankenstriche in Marketingtexten oder veröffentlichten Texten, die du für mich entwirfst** (Verkaufsseiten, E-Mails, Beiträge) – Gedankenstriche sind ein deutliches Erkennungsmerkmal dafür, dass „eine KI dies geschrieben hat“, und kosten dich still und leise das Vertrauen eines kritischen Publikums. Bindestriche in normalen zusammengesetzten Wörtern („18-jährig“, „10-%-Regel“) sind in Ordnung.
 
-- [FILL IN: your own tone, formatting, and word rules. Delete this line if the em-dash rule is all you need.]
+### Tägliche Notizen
 
-### Daily Notes
+Tägliche Notizen halten fest, was während all meiner Arbeitssitzungen eines Tages passiert ist. Sie befinden sich im Ordner `01 - Tägliche Notizen/` und werden idealerweise in Monatsunterordner (`01 - Tägliche Notizen/06 - Juni 2026/`) sortiert, sobald der Ordner voll ist. Dateiname `YYYY-MM-DD.md`. Frontmatter `Status: aktiv`, `Projekt: persönlich`, `Typ: Log`.
 
-Daily notes capture what happened across all of my work sessions for a day. They live in `01 - Daily Notes/`, ideally sorted into month subfolders (`01 - Daily Notes/06 - June 2026/`) once the folder fills up. Filename `YYYY-MM-DD.md`. Frontmatter `status: active`, `project: personal`, `type: log`.
+Der Haupttext beginnt mit einer für Menschen lesbaren Datumsüberschrift (`# Montag, 8. Juni 2026`). Unmittelbar danach folgt ein **`## Index`**-Block: eine fettgedruckte Themenzeile pro Sitzung/Eintrag mit einer einzeiligen Zusammenfassung. Der Index sorgt dafür, dass ein Tag mit vielen Einträgen übersichtlich bleibt und nicht zu einer Prosa-Wand wird. Anschließend folgt der Hauptteil des Eintrags gemäß der Vorlage für tägliche Notizen – diese ist im Lieferumfang dieses Systems als `templates/Tägliche Notiz-Vorlage.md` enthalten; kopiere sie während der Einrichtung in deinen Vault als `01 - Tägliche Notizen/Tägliche Notiz-Vorlage.md`. Ihre Abschnitte: **Was erledigt wurde · Was noch in Arbeit ist · Getroffene Entscheidungen · Bearbeitete Notizen · Profilaktualisierungen**. Erstelle jede Tagesnotiz AUS der Vorlage; verfasse niemals eine von Hand.
 
-Start the body with a human-readable date heading (`# Monday, June 8, 2026`). Then, right after it, an **`## Index`** block: one bold-topic line per session/entry with a one-sentence outcome. The index makes a day with many entries scannable instead of a wall of prose. Then the entry body follows the Daily Note Template — it ships with this system as `templates/DAILY-NOTE.md`; during setup, copy it into your vault as `01 - Daily Notes/Daily Note Template.md`. Its sections: **What Got Done · What's Still In Progress · Decisions Made · Notes Touched · Profile Updates**. Create every daily note FROM the template; never hand-roll one.
+Falls die heutige Notiz bereits aus einer früheren Sitzung vorhanden ist, füge einen neuen Sitzungsabschnitt an (`## Sitzung 2`, `## Abendsitzung`) und füge eine Zeile zum Indexblock hinzu – überschreibe nichts. Versehe jeden Eintrag mit einem Zeitstempel in meiner Ortszeit.
 
-If today's note already exists from an earlier session, append a new session section (`## Session 2`, `## Evening Session`) and add a line to the Index block — don't overwrite. Timestamp each entry with my local time.
+#### Auslöser 1: Signal zum Abschluss
+Frag mich niemals, ob ich mit der Arbeit fertig bin. Wenn ich ein Signal gebe („Ich bin fertig“, „Ich mache Schluss“, „Gute Nacht“), biete an, die heutige Tagesnotiz zu erstellen oder zu aktualisieren. Überprüfe immer zuerst das tatsächliche aktuelle Datum und die Uhrzeit – Gespräche können über Nacht offen bleiben.
 
-#### Trigger 1: Wrap-Up Signal
-Never ask me if I'm done working. When I signal it ("I'm done," "calling it," "goodnight"), offer to create or update today's daily note. Always check the actual current date and time first — conversations can stay open overnight.
+#### Auslöser 2: Die Notiz von gestern zu Beginn des Gesprächs durchsehen
+Überprüfe zu Beginn jedes Gesprächs, nachdem du diesen Index gelesen hast, die Tagesnotiz von gestern (oder die des letzten Werktags, falls heute Montag ist).
+- **Falls sie nicht vorhanden ist:** Erstelle sie anhand des dir vorliegenden Kontexts (Chatverlauf, Sitzungskontext) und weise darauf hin, dass sie rekonstruiert wurde und möglicherweise unvollständig ist. Kein Kontext für diesen Tag → gehe von einem freien Tag aus und überspringe ihn. Erstelle keine leeren Tagesnotizen.
+- **Falls vorhanden:** Lies sie vor; falls dir Kontext fehlt, füge einen Sitzungsabschnitt hinzu; andernfalls lass sie unverändert.
 
-#### Trigger 2: Review Yesterday's Note at Start of Conversation
-At the start of every conversation, after reading this index, check yesterday's daily note (or the most recent weekday if today is Monday).
-- **If it doesn't exist:** create it from whatever context you have (chat history, session context), and say it's reconstructed and may be incomplete. Zero context for that day → assume a day off and skip it. Don't create empty daily notes.
-- **If it exists:** read it; if you have context it's missing, append a session section; otherwise leave it alone.
+Dies gilt allgemein – jede KI, die diesen Speicher liest, handelt so. Ich setze mehrere KIs über mehrere Sitzungen hinweg ein; keine einzelne sieht alles, daher trägt jede das bei, was sie weiß, und die Tagesnotiz füllt sich im Laufe der Zeit. Mach keine große Sache daraus. Sag kurz, was du getan hast, und mach weiter.
 
-This is universal — every AI that reads this vault does it. I use multiple AIs across multiple sessions, no single one sees everything, so each contributes what it knows and the daily note fills in over time. Don't make a production of it. Briefly say what you did and move on.
+### Lebendiges Profil
 
-### Living Profile
+Diese Datei ist ein lebendiges Dokument. Aktualisiere die Profilabschnitte, sobald du durch Gespräche neue Dinge über mich erfährst. Aktualisierungen erfolgen im Hintergrund und werden in der Tagesnotiz unter „Profilaktualisierungen“ protokolliert.
 
-This file is a living document. Update the profile sections as you learn new things about me through conversation. Updates happen silently and are logged in the daily note under "Profile Updates."
+**Du kannst Folgendes aktualisieren:** Wichtige Personen · Meine Denkweise · Persönliche Interessen · Tagesablauf.
+**Du darfst Folgendes NICHT aktualisieren:** Wer ich bin (grundlegende Biografie – diese darf nur ich ändern) · die Projektabschnitte · Was gerade aktiv ist (befindet sich unter „Aktive Prioritäten“) · Meine Präferenzen für die Arbeit mit KI · Vault-Regeln für KI.
+**Die Vault-Struktur ist ein Sonderfall:** Schreibe sie niemals aus eigener Initiative um, aber wenn ein Ordner tatsächlich erstellt, umbenannt oder entfernt wird, ist die Aktualisierung der Karte Teil dieser Änderung – erledige dies im selben Arbeitsgang.
 
-**You can update:** Key People · How I Think · Health · Personal Interests · Beliefs · Daily Routine.
-**You must NOT update:** Who I Am (basic bio — only I change it) · the project sections · What's Active Right Now (lives in Active Priorities) · My Preferences for Working with AI · Vault Rules for AI.
-**Vault Structure is a special case:** never rewrite it on your own initiative, but when a folder is actually created, renamed, or removed, updating the map is part of that change — do it in the same pass.
+Beurteilung: Eine beiläufige Erwähnung ist kein Persönlichkeitsmerkmal. Überprüfe auf Duplikate/Widersprüche; wenn neue Informationen einem Eintrag widersprechen, aktualisiere diesen Eintrag, anstatt einen zweiten hinzuzufügen. Passe dich dem bestehenden Ton an. Entferne niemals einen Eintrag, es sei denn, er wird ausdrücklich widerlegt. Weniger, dafür qualitativ hochwertigere Aktualisierungen.
 
-Judgment: a passing mention is not a personality trait. Check for duplicates/contradictions; if new info contradicts an entry, update that entry rather than adding a second. Match existing tone. Never remove an entry unless explicitly contradicted. Fewer, higher-quality updates.
-
-Log every profile update in the daily note's "Profile Updates" section (e.g. "**Personal Interests:** added woodworking").
+Trage jede Profilaktualisierung im Abschnitt „Profilaktualisierungen“ der Tagesnotiz ein (z. B. „**Persönliche Interessen:** ‚Holzbearbeitung‘ hinzugefügt“).

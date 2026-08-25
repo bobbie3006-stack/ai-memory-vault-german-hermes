@@ -26,10 +26,12 @@ Mein Name ist Robert und ich bin ein deutschsprachiger IT-Berater aus Deutschlan
 ## Beratung (02 - Beratung)
 Meine tägliche IT-Berater Arbeit an Lösungen, Konzepten, Strategien, Recherchen und Angeboten zu Anforderungen, Systemen und Prozessen im Bereich Daten und KI.
 - **Status:** Aktiv
+- Hier gibt es immer wieder unterschiedliche Unterprojekte und Aufgaben, die jeweils einen eigenen Status haben
 
 ## Ausschreibungen (03 - Ausschreibungen)
 Meine regelmäßige Arbeit zur Analyse, Bewertung, Bearbeitung und Abgabe von Angeboten zu IT-Ausschreibungen im Bereich Daten und KI.
 - **Status:** Aktiv
+- Hier gibt es immer wieder unterschiedliche Unterprojekte in Form von Ausschreibungen, die jeweils einen eigenen Status haben
 
 ## Struktur des Vaults
 

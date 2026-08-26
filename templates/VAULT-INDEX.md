@@ -32,14 +32,15 @@ Meine regelmäßige Arbeit zur Analyse, Bewertung, Bearbeitung und Abgabe von An
 ## Entitäten (04 - Entitäten)
 Eine Liste bzw. Sammlung an nennenswerten Entitäten, die ich bei meiner Arbeit verwendet habe. Zusammengefasst und auf einem Blick mit Erkenntnissen.
 - **Status:** Aktiv
-- Hier gibt es eine Liste an bekannten Personen, Unternehmen, Produkte, Modelle als kompakte Zusammenfassung, deren Vor- und Nachteile, Probleme und Lösungen
+- Hier gibt es eine Liste an bekannten Personen, Unternehmen, Produkte, Modelle als kompakte Übsersicht/Zusammenfassung was es ist, Schlüsselfakten und Daten, Relationen zu anderen Entitäten ([[wikilinks]]), Quellen
 
 ## Ressourcen (05 - Ressourcen)
 Eine Liste bzw. Sammlung an nennenswerten Ressourcen, die ich bei meiner Arbeit verwendet habe. Bereitgestellt als Vorlage, Vorgehensmodell, Leitfaden oder Konzept.
 - **Status:** Aktiv
-- Hier gibt es eine Liste an bekannten Dateien oder Anleitungen um Anforderungen, egal ob technisch, fachlich, regulatorisch effizient zu bearbeiten
+- Hier gibt es eine Liste an bekannten Dateien oder Anleitungen um Anforderungen, egal ob technisch, fachlich, regulatorisch effizient zu bearbeiten. Das beinhaltet Definitionen/Beschreibungen, Aktueller Stand des Wissens, Offene Fragen oder Punkte, Relationen zu anderen Ressourcen ([[wikilinks]]), Quellen
+- Optional: Vergleiche bzw. Side-by-side Analysen inkl. was genau verglichen wurde und warum, sowie Dimensionen des Vergleichs (vorzugsweise in Tabellenform) und Fazit oder Zusammenfassung plus Quellenangabe
 
-## Struktur des Vaults
+## Vault-Struktur
 
 ```
 00 - Eingang          ← Erst alles festhalten, später sortieren
@@ -78,7 +79,7 @@ Alle offenen Aufgaben befinden sich in einer Notiz: [[Aktive Prioritäten]]. Ver
 
 ## Wie das Gedächtnis funktioniert (für die KI)
 
-Dieser Speicher ist dein Gedächtnis. Er ist extern und praktisch unbegrenzt. Versuche nicht, alles auf einmal im Kopf zu behalten. Behalte nur das im Gedächtnis, was für die aktuelle Aufgabe benötigt wird, und vertraue darauf, dass alles andere nur einen Suchvorgang entfernt ist. Um etwas zu finden, beginne bei diesem Index, folge den Ordnerverzeichnissen und Wikilinks oder nutze die Suchfunktion. Zu wissen, dass eine Notiz existiert, ist genauso gut, als hättest du sie im Kopf, denn du kannst sie in einem Schritt abrufen. Das ermöglicht es dir, alle hier vorhandenen Informationen zu nutzen, ohne darin unterzugehen.
+Dieser Speicher ist dein Gedächtnis. Er ist extern und praktisch unbegrenzt. Versuche nicht, alles auf einmal im Kopf zu behalten. Behalte nur das im Gedächtnis, was für die aktuelle Aufgabe benötigt wird, und vertraue darauf, dass alles andere nur einen Suchvorgang entfernt ist. Um etwas zu finden, beginne bei diesem Index, folge den Ordnerverzeichnissen und Wikilinks oder nutze die Suchfunktion. Zu wissen, dass eine Notiz existiert, ist genauso gut, als hättest du sie im Kopf, denn du kannst sie in einem Schritt abrufen. Das ermöglicht es dir, alle hier vorhandenen Informationen zu nutzen, ohne darin unterzugehen. Überprüfen Sie die Datumsangaben – neuere Quellen, Notizen und Ressourcen haben in der Regel Vorrang vor älteren. Bei echten Widersprüchen sollten Sie beide Standpunkte mit Datumsangaben und Quellenangaben vermerken.
 
 ---
 
@@ -91,9 +92,8 @@ Diese Regeln gelten für jede KI, die in diesem Speicher liest oder schreibt.
 - Jede Wiki-Seite beginnt mit YAML-Frontmatter (siehe unten)
 - Verwende `[[Wikilinks]]`, um Seiten miteinander zu verlinken
 - Wenn du eine Seite aktualisierst, passe immer das Datum unter `Letztes Update` an
-- Jede neue Seite muss in `VAULT-INDEX.md` unter dem richtigen Abschnitt hinzugefügt werden
-- **Herkunftsangaben:** Auf Seiten, die mehrere Quellen zusammenfassen, füge `^[Eingang/quelldatei.md]` am Ende von Absätzen hinzu, deren Aussagen aus einer bestimmten Quelle stammen. So kann der Leser jede
-  Aussage zurückverfolgen, ohne die gesamte Rohdatei erneut lesen zu müssen.
+- Jede neue Seite muss in Indexdateien `<Ordnername>.md` vom Typ `Index` unter dem richtigen Abschnitt/Projekt hinzugefügt werden
+- **Herkunftsangaben:** Auf Seiten, die mehrere Quellen zusammenfassen, füge `^[Eingang/quelldatei.md]` am Ende von Absätzen hinzu, deren Aussagen aus einer bestimmten Quelle stammen. So kann der Leser jede Aussage zurückverfolgen, ohne die gesamte Rohdatei erneut lesen zu müssen.
 
 ### Frontmatter und Wikilinks
 
@@ -158,9 +158,9 @@ Fügen Sie beim Erstellen oder Bearbeiten einer Notiz `Wiki-Links` hinzu:
 
 ### Ordnerverzeichnisse (bitte synchron halten)
 
-Jeder Ordner, der umfangreiche Inhalte enthält (5 oder mehr Notizen oder einen eigenständigen Bereich), erhält eine Index-Notiz, die nach dem Ordner benannt ist: `<Ordnername>.md`, mit dem Frontmatter-Eintrag `Typ: Index`, in der jede Notiz im Ordner mit einer einzeiligen Beschreibung aufgeführt ist. Der Index ist eine Vereinbarung: Wenn du eine Notiz erstellst, umbenennst, verschiebst oder wesentlich änderst, aktualisiere gleichzeitig den Index des entsprechenden Ordners. Ein veralteter Index führt dazu, dass eine zukünftige Sitzung auf der Grundlage einer falschen Zuordnung Entscheidungen trifft.
+Jeder Ordner, der Inhalte enthält, erhält eine Index-Notiz, die nach dem Ordner benannt ist: `<Ordnername>.md`, mit dem Frontmatter-Eintrag `Typ: Index` und dem Datum `Letztes Update: DD.MM.YYYY`. Hier ist jede Notiz im Ordner mit einer einzeiligen Beschreibung aufgeführt. Der Index ist eine Vereinbarung: Wenn du eine Notiz erstellst, umbenennst, verschiebst oder wesentlich änderst, aktualisiere gleichzeitig den Index des entsprechenden Ordners. Ein veralteter Index führt dazu, dass eine zukünftige Sitzung auf der Grundlage einer falschen Zuordnung Entscheidungen trifft.
 
-**Wenn ein neuer Ordner erstellt wird:** Erstelle gleichzeitig dessen Indexdatei `<Ordnername>.md`, füge einen Eintrag zum Index des übergeordneten Ordners hinzu, falls dieser einen hat, und aktualisiere im selben Arbeitsgang die Zuordnung **Vault-Struktur** in dieser Datei. Ein Ordner, der in der Zuordnung nicht aufgeführt ist, wird von keiner zukünftigen Sitzung berücksichtigt.
+**Wenn ein neuer Ordner erstellt wird:** Erstelle gleichzeitig dessen Indexdatei `<Ordnername>.md` vom Typ `Index`, füge einen Eintrag zum Index des übergeordneten Ordners hinzu, falls dieser einen hat, und aktualisiere im selben Arbeitsgang die Zuordnung **Vault-Struktur** in dieser Datei. Ein Ordner, der in der Zuordnung nicht aufgeführt ist, wird von keiner zukünftigen Sitzung berücksichtigt.
 
 ### Umbenennen und Verschieben von Notizen
 
@@ -197,11 +197,28 @@ Frag mich niemals, ob ich mit der Arbeit fertig bin. Wenn ich ein Signal gebe (�
 
 Dies gilt allgemein – jede KI, die diesen Speicher liest, handelt so. Ich setze mehrere KIs über mehrere Sitzungen hinweg ein; keine einzelne sieht alles, daher trägt jede das bei, was sie weiß, und die Tagesnotiz füllt sich im Laufe der Zeit. Mach keine große Sache daraus. Sag kurz, was du getan hast, und mach weiter.
 
+### Kernoperationen aus dem Eingang (`00 - Eingang/*`)
+Der Nutzer legt Informationen in Form einer oder mehrerer URL's oder Dateien in dieser Landing Zone zur Erfassung ab. Diese sollen in der Regel in den Vault an die entsprechenden Orte integriert werden.
+1. Rohdaten erfassen:
+- URL → Mit „web_extract“ Markdown extrahieren, in „00 - Eingang/Artikel/“ speichern
+- PDF → Mit „web_extract“ (unterstützt PDFs) extrahieren, in „00 - Eingang/Dokumente/“ speichern
+- >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ÜBERARBEITEN MIT ANYDOC?!?!??!
+- Datei aussagekräftig benennen: „00 - Eingang/Artikel/karpathy-llm-wiki-2026.md“
+- Füge „Eingang“-Frontmatter hinzu (Quell-URL, Datum der Erfassung, sha256-Hash des Textkörpers vom Inhalt). Bei erneuter Erfassung derselben URL: Berechne den SHA-256-Hash neu, vergleiche ihn mit dem gespeicherten Wert – überspringe den Vorgang, wenn er identisch ist, markiere Abweichungen und aktualisiere die Datei, wenn er unterschiedlich ist. Dies ist kostengünstig genug, um bei jeder erneuten Erfassung durchgeführt zu werden, und erkennt unbemerkte Änderungen an der Quelle.
+2. Bespreche die wichtigsten Erkenntnisse mit dem Nutzer: Was ist interessant, was ist für den jeweiligen Bereich von Bedeutung? (Überspringe diesen Schritt in automatisierten/Cron-Kontexten – fahre direkt fort.)
+3. Prüfe, was bereits vorhanden ist: Durchsuche alle Indexdateien `<Ordnername>.md` vom Typ `Index` und nutze „search_files“, um vorhandene Seiten zu den genannten Entitäten/Begriffen/Ressourcen zu finden. Das ist der Unterschied zwischen einem wachsenden Wiki und einem Haufen von Duplikaten.
+4. Vault-Seiten erstellen oder aktualisieren: Neue Entitäten/Konzepte: Erstelle Seiten so, dass sie in das entsprechende festgelegte Projekt aus dem VAULT-INDEX.md hineinpassen. Bestehende Seiten: Füge neue Informationen hinzu, aktualisiere Fakten und passe das Datum "Letztes Update" an. Wenn neue Informationen im Widerspruch zu bestehenden Inhalten stehen, befolge die Aktualisierungsrichtlinie.
+Querverweise: Jede neue oder aktualisierte Seite muss über [[Wiki-Links]] auf andere Seiten verweisen, falls relevant. Überprüfe, ob bestehende Seiten zurückverweisen.
+Tags: Verwende ausschließlich Tags aus der Taxonomie.
+Herkunft: Füge auf Seiten, die Quellen zusammenfassen, den Absätzen, deren Aussagen auf eine bestimmte Quelle zurückzuführen sind, die Markierung ^[Eingang/Artikel/quelle.md] hinzu.
+5. Navigation aktualisieren: Neue Seiten alphabetisch unter dem richtigen Abschnitt in der Indexdatei `<Ordnername>.md` vom Typ `Index` hinzufügen und das Datum der „Letztes Update“ aktualisieren. Am Ende An „Tägliche Notizen“ anhängen: ## [DD.MM.YYYY] Rohdatenerfassung | Titel der Quelle
+6. Berichte über die Änderungen: Liste dem Benutzer kurz und knapp alle erstellten oder aktualisierten Dateien auf.
+
 ### Lebendiges Profil
 
-Diese Datei ist ein lebendiges Dokument. Aktualisiere die Profilabschnitte, sobald du durch Gespräche neue Dinge über mich erfährst. Aktualisierungen erfolgen im Hintergrund und werden in der Tagesnotiz unter „Profilaktualisierungen“ protokolliert.
+Diese Datei ist ein lebendiges Dokument. Aktualisiere die Profilabschnitte, sobald du durch Gespräche neue erfährst. Aktualisierungen erfolgen im Hintergrund und werden in der Tagesnotiz unter „Profilaktualisierungen“ protokolliert.
 
-**Du kannst Folgendes aktualisieren:** Wichtige Personen · Meine Denkweise · Persönliche Interessen · Tagesablauf.
+**Du kannst Folgendes aktualisieren:** Wichtige Personen · Meine Denkweise · Persönliche Interessen · Tagesablauf. 
 **Du darfst Folgendes NICHT aktualisieren:** Wer ich bin (grundlegende Biografie – diese darf nur ich ändern) · die Projektabschnitte · Was gerade aktiv ist (befindet sich unter „Aktive Prioritäten“) · Meine Präferenzen für die Arbeit mit KI · Vault-Regeln für KI.
 **Die Vault-Struktur ist ein Sonderfall:** Schreibe sie niemals aus eigener Initiative um, aber wenn ein Ordner tatsächlich erstellt, umbenannt oder entfernt wird, ist die Aktualisierung der Karte Teil dieser Änderung – erledige dies im selben Arbeitsgang.
 

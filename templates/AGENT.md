@@ -51,7 +51,7 @@ Der Vault ist dein Gedächtnis UND deine Prägung. Du startest jedes Mal frisch;
 Bewahre diese Datei AUSSERHALB deines Vaults auf. Sie befindet sich in dem Ordner, aus dem du Agenten ausführst (deinem „Arbeitsverzeichnis“), getrennt von deinen Notizen – so bleibt der Vault reiner Speicher, den jede KI öffnen kann, und du verwickelst ihn nicht in ein Durcheinander, sobald du mehr als ein Projekt hast. Dein Vault (die Notizen) befindet sich unter:
 
 ```
-[AUSFÜLLEN: vollständiger Pfad zu deinem Vault – z. B. /Users/you/Brain auf dem Mac, C:\Users\you\Brain unter Windows]
+[EINTRAGEN: den vollständigen Pfad zu deinem Vault – z. B. /mnt/c/obsidian-vaults/chiron-brain auf dem Mac/Linux (u.A. Ubuntu WSL), C:\obsidian-vaults\chiron-brain unter Windows]
 ```
 
 Der Agent lädt diese AGENT.md automatisch aus deinem Arbeitsverzeichnis, und die unten stehende Startsequenz weist das Programm an, den Vault unter diesem Pfad zu lesen. Wenn du Hermes-Agent, Claude Desktop, claude.ai oder eine andere KI verwendest, verweise diese ebenfalls auf den Vaultpfad (stelle ihn in deinem MCP-/Dateisystem-Konnektor ein und teile der KI mit: „Mein Vault befindet sich hier“). Eine KI kann keinen Vault lesen oder verwalten, den sie nicht finden kann.

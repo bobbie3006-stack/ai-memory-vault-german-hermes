@@ -7,10 +7,6 @@ Typ: Index
 
 Lies diese Datei zu Beginn jedes Gesprächs. Sie erfüllt zwei Aufgaben: **das Profil der Person, für die du arbeitest** (wer ich bin, wie ich denke, wie man mit mir zusammenarbeitet) und **die Übersicht über diesen Vault** (die Struktur, die Indizes und die Regeln für dessen Pflege). Deine eigene Identität ist hier nicht enthalten – sie befindet sich in der Startdatei (AGENT.md), die die Komprimierung übersteht.
 
-(Dies ist eine Startervorlage. Jede Stelle, an der deine Angaben erforderlich sind, ist mit **[AUSFÜLLEN: ...]** gekennzeichnet. Du kannst sie von Hand ausfüllen, aber besser ist es, diese Aufgabe deiner KI zu überlassen: Sag „Befrage mich und fülle meinen VAULT-INDEX aus“ und lass sie dir die Fragen stellen. Du kannst diese Datei nach Belieben umbenennen – VAULT-INDEX ist lediglich der Standardname.)
-
-(**AI:** Wenn du diese Datei liest und noch [EINFÜGEN: ...]-Markierungen vorhanden sind, ist dieser Vault noch nicht eingerichtet – biete an, die Person zu befragen und ihn für sie zu vervollständigen. Beginne mit dem Agenten selbst: Hilf ihr dabei, einen Namen, eine Rolle und eine Persönlichkeit auszuwählen, und trage diese in den Abschnitt **Identity** der Datei AGENT.md (die Startdatei) ein, nicht in diese Notiz. Frage dann jeweils nach einem Thema, ganz im Stil eines Gesprächs. Verhaltensregeln für das Interview: Erkläre in einem Satz, wozu ein Abschnitt dient, bevor du danach fragst, mache deutlich, dass jeder persönliche Abschnitt optional ist, und dränge niemals auf persönliche Details – wenn die Person zögert oder etwas auslässt, fahre fort und lösche diesen Abschnitt. Ersetze dann jede Markierung durch die tatsächlichen Informationen der Person, geschrieben in der ersten Person, als hätte sie es selbst verfasst, behalte nur die optionalen Abschnitte, die sie möchte, und lösche diesen Block sowie alle anderen Anweisungen in Klammern. Die fertige Datei sollte so wirken, als hätte die Person sie selbst verfasst, ohne dass irgendwo noch [EINFÜGEN]-Markierungen zu sehen sind.)
-
 ---
 
 ## Speicherort des Vaults
@@ -54,7 +50,7 @@ Alle offenen Aufgaben befinden sich in einer Notiz: [[Aktive Prioritäten]]. Ver
 ## Meine Vorlieben bei der Arbeit mit KI
 
 - **Einfache Sprache, kein Fachjargon und direkt auf den Punkt kommen.** Drücke dich nicht vage aus und mache keine übertriebenen Einschränkungen. Sei immer ehrlich und offen.
-- **Geben Sie sich nicht mit halbfertiger Arbeit zufrieden.** Mach es gleich beim ersten Mal richtig. „v2 später“ ist kein Ort, um einen bekannten Fehler zu parken – baue es jetzt richtig oder nenne einen ehrlichen Grund, warum nicht.
+- **Gebe dich nicht mit halbfertiger Arbeit zufrieden.** Mach es gleich beim ersten Mal richtig. „v2 später“ ist kein Ort, um einen bekannten Fehler zu parken – baue es jetzt richtig oder nenne einen ehrlichen Grund, warum nicht.
 - **Sei ein Partner, kein Ja-Sager.** Verteidige deinen Standpunkt, wenn du denkst, dass ich falsch liege. Wenn ich widerspreche, gib nicht einfach nach – in der Hälfte der Fälle teste ich nur deine Argumentation. Bringe deine Argumente vor, zeige die Vor- und Nachteile auf, und lass mich dann entscheiden. Ändere deine Antwort nur, wenn mein Argument dich tatsächlich umstimmt.
 - **Nimm es direkt hin.** Wenn ich mich bedanke oder sage, dass etwas gut angekommen ist, weiche nicht aus und übertreibe es nicht mit Schmeicheleien. Mach einfach weiter.
 - **Wenn ich frage „Warum brauchst du das?“, ist das eine Überprüfung der Spezifikationen, keine Verwirrung.** Betrachte es als Hinweis darauf, dass dein Plan möglicherweise nicht ganz stimmt. Überprüfe ihn noch einmal und korrigiere ihn dann entweder oder erkläre ihn anhand von Beispielen.
@@ -111,7 +107,7 @@ Tags: [siehe Tag Taxonomie unten]
 ```
 
 **Tag Taxonomie:** Top-Level Tags für die Arbeitsdomäne
-- Technik: Modell, Architektur, Benchmark, Training, Cloud, On-Premise, Development, Business Intelligence (BI), Data Lake, Data Warehouse, Data Governance, Data Quality, Agil, CI/CD, Automatisierung
+- Technik: Modell, Architektur, Benchmark, Training, Cloud, On-Premise, Development, Business Intelligence (BI), Data Lake, Data Warehouse, Data Governance, Data Quality, Agil, CI/CD, Automatisierung. Existierende Tags nach Domänen:
 - Personen/Organisation/Produkt/Regulatorik: Person, Unternehmen, Open-Source, Closed-Source, DSGVO, KRITIS, DORA, ISO 27001, ITIL, Ausschreibung (RFP), Aufwandsschätzung, Angebotserstellung
 - Methodiken: Optimierung, Fine-Tuning, Erkenntnisse, Verbesserung, Daten, Anforderung, Standards, Scrum, Kanban, Risikomanagement
 - Meta: Recherche, Analyse, Vergleich, Leitlinie, Kontroverse, Vorhersage, Konzept, Pitch, Roadmap
@@ -127,13 +123,15 @@ Fügen Sie beim Erstellen oder Bearbeiten einer Notiz `Wiki-Links` hinzu:
 **Status** — Standardmäßig `aktiv`. Bei bestehenden Notizen aus dem Inhalt ableiten: in Bearbeitung / enthält noch nicht abgehakte Punkte → `aktiv`; alles erledigt → `abgeschlossen`; ein zukünftiges „Vielleicht“ → `draft`; war aktiv, ist aber ins Stocken geraten → `zurückgestellt`; befindet sich im Archiv-Ordner → `archiviert`.
 
 **Projekt** — Wozu die Notiz *dient* (Ordner ist die Standardeinstellung, aber der Inhalt hat Vorrang). Zuordnung:
-- `02 - [EINFÜGEN: Projekt]/*` → `[EINFÜGEN: Projekt-Slug]`  [EINFÜGEN: eine Zeile pro Projektordner; Slugs sind in Kleinbuchstaben und mit Bindestrichen – „The Coffee Shop“ → coffee-shop]
-- `[Persönlich]/*` → `persönlich`
-- `01 - Tägliche Notizen/*` → `persönlich`
-- `[Archiv]/*` → aus dem Inhalt / dem ursprünglichen Projekt ableiten
-- `[Ressourcen]/*` → `meta`
 - `00 - Eingang/*` → aus dem Inhalt ableiten, andernfalls `persönlich`
-- Dateien auf der Stammebene → `Meta`
+- `01 - Tägliche Notizen/*` → `persönlich`
+- `02 - Beratung/*` → `beratung`
+- `03 - Ausschreibung/*` → `beratung`
+- `04 - Entitäten/*` → `meta`
+- `05 - Ressourcen/*` → `meta`
+- `06 - Persönlich/*` → `persönlich`
+- `07 - Archiv/*` → aus dem Inhalt / dem ursprünglichen Projekt ableiten
+- Dateien auf der Stammebene → `meta`
 
 **Typ** – Um welche ART von Dokument es sich handelt (nicht um dessen Thema):
 - `Index` – ein Ordnerverzeichnis / eine Inhaltsübersicht (oder dieses Stammverzeichnis)
@@ -145,7 +143,7 @@ Fügen Sie beim Erstellen oder Bearbeiten einer Notiz `Wiki-Links` hinzu:
 ### Gültige Feldwerte
 
 **Status:** `aktiv` | `abgeschlossen` | `zurückgestellt` | `draft` | `archiviert`
-**Projekt:** `beratung` | `rfp` | `aktiv` |  [EINFÜGEN: Ihre Projekt-Slugs] | `persönlich` | `meta`
+**Projekt:** `beratung` | `persönlich` | `meta`
 **Typ:** `Index` | `Referenz` | `Guide` | `Plan` | `Log`
 
 ### Ordnerverzeichnisse (bitte synchron halten)

@@ -38,12 +38,13 @@ Meine regelmäßige Arbeit zur Analyse, Bewertung, Bearbeitung und Abgabe von An
 ```
 00 - Eingang          ← Erst alles festhalten, später sortieren
 01 - Tägliche Notizen    ← Datumsspezifische Protokolle der erledigten Aufgaben, eine Datei pro Tag
-02 - Beratung   ← Tägliche Arbeit an Lösungen, Konzepten, Strategien und Angeboten zu Anforderungen, Systemen und Prozessen 
-03 - Ausschreibungen    ← Analyse, Bewertung, Bearbeitung und Abgabe von Angeboten zu IT-Ausschreibungen
-...
-04 - Persönlich      ← Das Leben außerhalb der Arbeit
-05 - Archiv       ← Abgeschlossene Projekte und alte Notizen
-06 - Ressourcen     ← Projektübergreifendes Referenzmaterial, Vorlagen, Aufträge
+02 - Beratung   ← Tägliche Arbeit an Projekten, Lösungen, Konzepten, Strategien und Angeboten zu Anforderungen, Systemen und Prozessen 
+03 - Ausschreibungen    ← Recherche, Analyse, Bewertung, Bearbeitung und Abgabe von Angeboten zu IT-Ausschreibungen
+04 - Entitäten     ← Zusammenfassung von Entitäten (Personen, Unternehmen, Produkte, Modelle)
+05 - Ressourcen     ← Projektübergreifendes Referenzmaterial und Zusammenfassung von Themen (Konzepte, Regulatoriken, Vorgehensweisen, Leitfäden, Vorlagen)
+06 - Persönlich      ← Das Leben außerhalb der Arbeit
+07 - Archiv       ← Abgeschlossene Projekte und alte Notizen
+
 ```
 
 ## Was ist gerade aktiv?
@@ -51,8 +52,6 @@ Meine regelmäßige Arbeit zur Analyse, Bewertung, Bearbeitung und Abgabe von An
 Alle offenen Aufgaben befinden sich in einer Notiz: [[Aktive Prioritäten]]. Versehe jeden Eintrag mit dem entsprechenden Projekt, sofern dies nicht offensichtlich ist. Überprüfe dies zu Beginn jedes Gesprächs; vergewissere dich über den tatsächlichen Status eines Elements, bevor du darauf reagierst (ein aufgeführtes Element könnte bereits erledigt sein).
 
 ## Meine Vorlieben bei der Arbeit mit KI
-
-(Die Standardeinstellungen sind sinnvoll. Passen Sie sie an Ihre tatsächlichen Arbeitsgewohnheiten an.)
 
 - **Einfache Sprache, kein Fachjargon und direkt auf den Punkt kommen.** Drücke dich nicht vage aus und mache keine übertriebenen Einschränkungen. Sei immer ehrlich und offen.
 - **Geben Sie sich nicht mit halbfertiger Arbeit zufrieden.** Mach es gleich beim ersten Mal richtig. „v2 später“ ist kein Ort, um einen bekannten Fehler zu parken – baue es jetzt richtig oder nenne einen ehrlichen Grund, warum nicht.
@@ -81,6 +80,15 @@ Dieser Speicher ist dein Gedächtnis. Er ist extern und praktisch unbegrenzt. Ve
 
 Diese Regeln gelten für jede KI, die in diesem Speicher liest oder schreibt.
 
+## Konventionen
+- Dateinamen: Kleinbuchstaben, Bindestriche, keine Leerzeichen (z. B. `transformation-architektur.md`)
+- Jede Wiki-Seite beginnt mit YAML-Frontmatter (siehe unten)
+- Verwende `[[Wikilinks]]`, um Seiten miteinander zu verlinken
+- Wenn du eine Seite aktualisierst, passe immer das Datum unter `Letztes Update` an
+- Jede neue Seite muss in `VAULT-INDEX.md` unter dem richtigen Abschnitt hinzugefügt werden
+- **Herkunftsangaben:** Auf Seiten, die mehrere Quellen zusammenfassen, füge `^[Eingang/quelldatei.md]` am Ende von Absätzen hinzu, deren Aussagen aus einer bestimmten Quelle stammen. So kann der Leser jede
+  Aussage zurückverfolgen, ohne die gesamte Rohdatei erneut lesen zu müssen.
+
 ### Frontmatter und Wikilinks
 
 Jede Notiz MUSS einen YAML-Frontmatter enthalten. Füge ihn hinzu, wenn du eine Notiz erstellst. Wenn du eine bestehende Notiz bearbeitest, bei der der Frontmatter fehlt oder unvollständig ist, korrigiere dies im Rahmen dieser Bearbeitung. Halte nicht an, um Frontmatter zu Dateien hinzuzufügen, die du nur liest. Code-Dateien bilden eine Ausnahme – kein Frontmatter und keine Wikilinks im Code.
@@ -96,12 +104,22 @@ Einfach, übersichtlich, gut lesbar. Keine willkürlichen Emojis. Kontrollkästc
 Status: aktiv
 Projekt: [project-slug]
 Typ: Plan
+Erstellt: DD.MM.YYYY
+Letztes Update: DD.MM.YYYY
+Tags: [siehe Tag Taxonomie unten]
 ---
 ```
 
+**Tag Taxonomie:** Top-Level Tags für die Arbeitsdomäne
+- Technik: Modell, Architektur, Benchmark, Training, Cloud, On-Premise, Development, Business Intelligence (BI), Data Lake, Data Warehouse, Data Governance, Data Quality, Agil, CI/CD, Automatisierung
+- Personen/Organisation/Produkt/Regulatorik: Person, Unternehmen, Open-Source, Closed-Source, DSGVO, KRITIS, DORA, ISO 27001, ITIL, Ausschreibung (RFP), Aufwandsschätzung, Angebotserstellung
+- Methodiken: Optimierung, Fine-Tuning, Erkenntnisse, Verbesserung, Daten, Anforderung, Standards, Scrum, Kanban, Risikomanagement
+- Meta: Recherche, Analyse, Vergleich, Leitlinie, Kontroverse, Vorhersage, Konzept, Pitch, Roadmap
+Regel: Jedes Tag auf einer Seite muss in dieser Taxonomie enthalten sein. Wenn ein neues Tag benötigt wird, füge es zuerst hier hinzu und verwende es dann. So wird eine unkontrollierte Zunahme von Tags verhindert.
+
 Fügen Sie beim Erstellen oder Bearbeiten einer Notiz `Wiki-Links` hinzu:
 
-**Immer verlinken:** alle Personen unter „Wichtige Personen“ · namentlich genannte Unternehmen, Produkte und Plattformen · alle Notizen, auf die diese Notiz direkt verweist, die sie ergänzt oder von denen sie abhängt.
+**Immer verlinken:** namentlich genannte Unternehmen, Produkte und Plattformen · alle Notizen, auf die diese Notiz direkt verweist, die sie ergänzt oder von denen sie abhängt.
 **Niemals verlinken:** allgemeine Begriffe, nur weil eine Notiz denselben Namen trägt · dasselbe Ziel zweimal in einer Notiz · den Titel der Notiz selbst.
 
 ### So legen Sie die einzelnen Felder fest
@@ -127,7 +145,7 @@ Fügen Sie beim Erstellen oder Bearbeiten einer Notiz `Wiki-Links` hinzu:
 ### Gültige Feldwerte
 
 **Status:** `aktiv` | `abgeschlossen` | `zurückgestellt` | `draft` | `archiviert`
-**Projekt:** [EINFÜGEN: Ihre Projekt-Slugs] | `persönlich` | `Meta`
+**Projekt:** `beratung` | `rfp` | `aktiv` |  [EINFÜGEN: Ihre Projekt-Slugs] | `persönlich` | `meta`
 **Typ:** `Index` | `Referenz` | `Guide` | `Plan` | `Log`
 
 ### Ordnerverzeichnisse (bitte synchron halten)

@@ -11,7 +11,7 @@ Lies diese Datei zu Beginn jedes Gesprächs. Sie erfüllt zwei Aufgaben: **das P
 
 ## Speicherort des Vaults
 
-Dieser Vault befindet sich unter `[EINFÜGEN: vollständiger Pfad Ihres Vaults – z. B. /Users/you/Brain auf dem Mac, C:\Users\you\Brain unter Windows]`. Wenn Sie Claude Desktop, claude.ai oder eine andere KI als Claude Code verwenden, müssen Sie diesen Pfad angeben (stellen Sie ihn in Ihrem MCP-/Dateisystem-Konnektor ein und teilen Sie der KI mit: „Mein Vault befindet sich hier“). Eine KI kann einen Vault, den sie nicht finden kann, weder lesen noch verwalten.
+Dieser Vault befindet sich unter `[EINTRAGEN: den vollständigen Pfad zu deinem Vault – z. B. /mnt/c/obsidian-vaults/chiron-brain auf dem Mac/Linux (u.A. Ubuntu WSL), C:\obsidian-vaults\chiron-brain unter Windows]`. Wenn Sie Claude Desktop, claude.ai oder eine andere KI als Claude Code verwenden, müssen Sie diesen Pfad angeben (stellen Sie ihn in Ihrem MCP-/Dateisystem-Konnektor ein und teilen Sie der KI mit: „Mein Vault befindet sich hier“). Eine KI kann einen Vault, den sie nicht finden kann, weder lesen noch verwalten.
 
 ---
 

@@ -20,7 +20,7 @@ Dieser Vault befindet sich unter `[EINTRAGEN: den vollständigen Pfad zu deinem 
 Mein Name ist Robert und ich bin ein deutschsprachiger IT-Berater aus Deutschland. Meine Kernkompetenz fokussiert sich auf Lösungen zu Daten und KI. Ich komme ursprünglich zwar aus dem Web Development, bin aber die letzten 10 Jahre hauptsächlich aktiv im Bereich Data und AI on-premise und in der AWS- und Azure-Cloud. Technologisch bin ich hauptsächlich im Microsoft Stack mit MS SQL Server und dessen Werkzeugen (u.A. SQL Server Management Studio, SSIS, Fabric, etc.) aber auch in Open Source Lösungen aktiv, wie z.B. Apache Airflow. Aber auch Tools wie Databricks zum Beispiel. Ich vefolge die Philosopie: Technologie ist ein Werkzeug, aber keine Lösung. Fokus ist zumeist präzise Workflows zu etablieren, um Daten von A nach B zu bringen (ETL/ELT) und den entsprechenden Data Governance Rahmen zu schaffen (inkl. Datenkatalog, Datenherkunft/Lineage, Datenqualität).
 
 ## Beratung (02 - Beratung)
-Meine tägliche IT-Berater Arbeit an Lösungen, Konzepten, Strategien, Recherchen und Angeboten zu Anforderungen, Systemen und Prozessen im Bereich Daten und KI.
+Mein hauptsächlicher Arbeitsbereich. Meine tägliche Arbeit als IT-Berater an Lösungen, Konzepten, Strategien, Recherchen und Angeboten zu Anforderungen, Systemen und Prozessen im Bereich Daten und KI.
 - **Status:** Aktiv
 - Hier gibt es immer wieder unterschiedliche Unterprojekte und Aufgaben, die jeweils einen eigenen Status haben
 
@@ -28,6 +28,16 @@ Meine tägliche IT-Berater Arbeit an Lösungen, Konzepten, Strategien, Recherche
 Meine regelmäßige Arbeit zur Analyse, Bewertung, Bearbeitung und Abgabe von Angeboten zu IT-Ausschreibungen im Bereich Daten und KI.
 - **Status:** Aktiv
 - Hier gibt es immer wieder unterschiedliche Unterprojekte in Form von Ausschreibungen, die jeweils einen eigenen Status haben
+
+## Entitäten (04 - Entitäten)
+Eine Liste bzw. Sammlung an nennenswerten Entitäten, die ich bei meiner Arbeit verwendet habe. Zusammengefasst und auf einem Blick mit Erkenntnissen.
+- **Status:** Aktiv
+- Hier gibt es eine Liste an bekannten Personen, Unternehmen, Produkte, Modelle als kompakte Zusammenfassung, deren Vor- und Nachteile, Probleme und Lösungen
+
+## Ressourcen (05 - Ressourcen)
+Eine Liste bzw. Sammlung an nennenswerten Ressourcen, die ich bei meiner Arbeit verwendet habe. Bereitgestellt als Vorlage, Vorgehensmodell, Leitfaden oder Konzept.
+- **Status:** Aktiv
+- Hier gibt es eine Liste an bekannten Dateien oder Anleitungen um Anforderungen, egal ob technisch, fachlich, regulatorisch effizient zu bearbeiten
 
 ## Struktur des Vaults
 
